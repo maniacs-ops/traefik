@@ -142,7 +142,7 @@ func TestLoadIngresses(t *testing.T) {
 				Backend: "foo/bar",
 				Routes: map[string]types.Route{
 					"/bar": {
-						Rule: "PathPrefixStrip:/bar",
+						Rule: "PathPrefix:/bar",
 					},
 					"foo": {
 						Rule: "Host:foo",
